@@ -20,6 +20,7 @@ import Component_5_1 from './components/Component_5_1';
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const scrollContainerRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +44,17 @@ function App() {
       if (container) {
         container.removeEventListener('scroll', handleScroll);
       }
+      window.removeEventListener('scroll', handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   useEffect(() => {
@@ -191,9 +202,12 @@ function App() {
   return (
     <>
       <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] relative'>
-        <div className="fixed inset-0 z-0 pointer-events-none">
+      {/* Desktop Fixed Hero Background */}
+      {!isMobile && (
+        <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
           <Component_5_1 />
         </div>
+      )}
         <div className={`w-full fixed z-[200] [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto transition-all duration-500 ease-in-out ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
           <div className="w-full relative flex items-center [backface-visibility:hidden] select-none px-5 md:px-10">
             <div className="flex-1 flex items-center [backface-visibility:hidden] select-none">
@@ -333,7 +347,7 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative z-[2]"
+          className="w-full max-w-[1920px] mx-auto relative z-[2] bg-transparent"
         >
           <div className="[backface-visibility:hidden]">
             <div className="bg-white w-full h-[963px] fixed z-[10000] overflow-y-scroll invisible [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto">
@@ -356,7 +370,9 @@ function App() {
               <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
                 <Component_4 />
               </div>
-              <Component_5 />
+              <div className={`relative z-[30] ${!isMobile ? '-mt-[100vh]' : ''}`}>
+                <Component_5 isMobile={isMobile} />
+              </div>
               <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
                 <Component_6 />
               </div>

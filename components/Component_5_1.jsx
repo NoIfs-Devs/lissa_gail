@@ -25,7 +25,7 @@ function Component_5_1() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none touch-action-none"
         src="https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/uploads/1fe2db83-d7f9-47c6-bdfa-befc9b7308d2/1773864750682-aa4c3fe0/Lisa_hero_compressed_v2.mp4"
       />
       <div className="relative z-10 w-full h-full">
