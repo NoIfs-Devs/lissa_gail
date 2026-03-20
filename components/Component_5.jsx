@@ -13,7 +13,7 @@ function Component_5({ isMobile }) {
         </div>
       )}
       <section className="w-full h-full relative [backface-visibility:hidden] pointer-events-none m-0 p-0">
-        <div className="h-full max-w-[1820px] absolute z-[1] flex flex-col justify-end [backface-visibility:hidden] pointer-events-none pl-[40px] md:pl-[60px] pr-10 pb-[120px] pt-[60px] top-0 bottom-auto inset-x-0">
+        <div className="h-full max-w-[1820px] absolute z-[1] flex flex-col justify-end [backface-visibility:hidden] pointer-events-none pl-[40px] md:pl-[60px] pr-10 pb-[160px] md:pb-[120px] pt-[60px] top-0 bottom-auto inset-x-0">
           <span className='text-white font-medium leading-[1] [font-family:"Montserrat",sans-serif] text-[80px] md:text-[120px] tracking-[4px] uppercase block [backface-visibility:hidden] caret-white pointer-events-none'>
             LISSA GAIL
           </span>
