@@ -136,56 +136,15 @@ function App() {
     );
   }, []);
 
-  // Nuclear fix for persistent scroll locks injected by the environment (e.g. antigravity-scroll-lock)
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
-    const fixScroll = () => {
-      if (document.body.classList.contains('antigravity-scroll-lock')) {
-        document.body.classList.remove('antigravity-scroll-lock');
-      }
-      if (document.body.style.overflow === 'hidden') {
-        document.body.style.overflow = 'auto';
-        document.body.style.height = 'auto';
-      }
-      if (document.documentElement.style.overflow === 'hidden') {
-        document.documentElement.style.overflow = 'auto';
-        document.documentElement.style.height = 'auto';
-      }
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
     };
-
-    fixScroll();
-    const observer = new MutationObserver(fixScroll);
-    observer.observe(document.body, { attributes: true, attributeFilter: ['class', 'style'] });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
-
-    // Aggressive touchstart neutralization for iOS
-    const handleTouch = () => {
-      fixScroll();
-    };
-    window.addEventListener('touchstart', handleTouch, { passive: true });
-    window.addEventListener('touchmove', handleTouch, { passive: true });
-
-    // Inject a global style override at the end of the head
-    const style = document.createElement('style');
-    style.innerHTML = `
-      html, body, #root, #app {
-        overflow-y: auto !important;
-        height: auto !important;
-        min-height: 100% !important;
-        -webkit-overflow-scrolling: touch !important;
-      }
-      .antigravity-scroll-lock {
-        overflow-y: auto !important;
-        height: auto !important;
-      }
-    `;
-    document.head.appendChild(style);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('touchstart', handleTouch);
-      window.removeEventListener('touchmove', handleTouch);
-      document.head.removeChild(style);
-    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
@@ -330,16 +289,18 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative z-[2] bg-transparent"
+          className="w-full max-w-[1920px] mx-auto relative bg-transparent"
         >
-          {/* Sticky Hero Background */}
-          <div className="sticky top-0 h-screen w-full z-0 overflow-hidden pointer-events-none">
-            <Component_5_1 />
-          </div>
+          {/* Sticky Hero Background (Desktop Only) */}
+          {!isMobile && (
+            <div className="sticky top-0 h-screen w-full z-[15] overflow-hidden pointer-events-none">
+              <Component_5_1 />
+            </div>
+          )}
 
-          {/* Touch-Anchor Hero Content */}
-          <div className="relative z-[30] -mt-[100vh]">
-            <Component_5 />
+          {/* Hero Content Area */}
+          <div className={`relative z-[30] ${!isMobile ? '-mt-[100vh]' : ''}`}>
+            <Component_5 isMobile={isMobile} />
           </div>
 
           <div className="z-[30] relative bg-[#efefef]">
