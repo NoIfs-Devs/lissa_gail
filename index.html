@@ -500,14 +500,22 @@ Check your Browserslist config to be sure that your targets are set up correctly
     #root {
       margin: 0;
       padding: 0;
-      height: 100%;
+      min-height: 100% !important;
+      height: auto !important;
     }
     body {
-      overflow-x: hidden;
-      overflow-y: auto;
+      overflow-x: hidden !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch;
     }
     #app {
       position: relative;
+      z-index: 2;
+    }
+    /* Force override any injected scroll locks */
+    .antigravity-scroll-lock {
+      overflow-y: auto !important;
+      height: auto !important;
     }
   </style>
 </head>
