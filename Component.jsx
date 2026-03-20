@@ -201,7 +201,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] relative'>
+      <div className='bg-transparent [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] relative'>
       {/* Desktop Fixed Hero Background */}
       {!isMobile && (
         <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
@@ -370,7 +370,7 @@ function App() {
               <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
                 <Component_4 />
               </div>
-              <div className={`relative z-[30] ${!isMobile ? '-mt-[100vh]' : ''}`}>
+              <div className="relative z-[30]">
                 <Component_5 isMobile={isMobile} />
               </div>
               <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
