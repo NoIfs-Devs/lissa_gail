@@ -202,7 +202,7 @@ function Component_6() {
         ></a>
       </section>
       <div className="[backface-visibility:hidden] mt-5"></div>
-      <section className="relative [backface-visibility:hidden]">
+      <section className="bg-[#efefef] relative [backface-visibility:hidden]">
         <picture>
           <img
             width="4400"

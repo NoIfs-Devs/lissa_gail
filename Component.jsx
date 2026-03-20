@@ -34,10 +34,10 @@ function App() {
       container.addEventListener('scroll', handleScroll, { passive: true });
     }
     window.addEventListener('scroll', handleScroll, { passive: true });
-    
+
     // Initial check
     handleScroll();
-    
+
     return () => {
       if (container) {
         container.removeEventListener('scroll', handleScroll);
@@ -63,9 +63,9 @@ function App() {
         }
       } else if (script.id) {
         if (document.getElementById(script.id) && document.body.contains(document.getElementById(script.id))) {
-           // This is tricky because we usually replace the script. 
-           // But for inline scripts without IDs, it's harder.
-           // However, most important one here is UserWay widget.js which has a src.
+          // This is tricky because we usually replace the script. 
+          // But for inline scripts without IDs, it's harder.
+          // However, most important one here is UserWay widget.js which has a src.
         }
       }
 
@@ -170,7 +170,7 @@ function App() {
                     className="inline [backface-visibility:hidden] fill-white select-none"
                   ></path>
                 </svg>
-                 <span
+                <span
                   className='text-white leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] relative hidden md:block [background-position-x:100%] [background-position-y:100%] bg-no-repeat bg-[0px_1px] [backface-visibility:hidden] caret-white select-none'
                   data-style-id="style-2-1773778729182"
                 >
@@ -304,7 +304,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="bg-black relative z-[2] flex flex-col justify-center items-center [backface-visibility:hidden]">
+          <div className="bg-black relative z-[2] flex flex-col justify-center items-center [backface-visibility:hidden] min-h-screen">
             <div className="w-full relative z-[1] [backface-visibility:hidden] mx-auto px-5">
               <ul className="bg-white w-full grid grid-cols-1 md:grid-cols-4 items-stretch [backface-visibility:hidden] mt-5 pl-0 py-10 rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
                 <li className="min-h-[135px] relative flex flex-col items-start [backface-visibility:hidden] list-none list-outside px-10">
