@@ -504,6 +504,11 @@ Check your Browserslist config to be sure that your targets are set up correctly
       padding: 0;
       overflow-x: hidden !important;
       overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch;
+    }
+    #app {
+      position: relative;
+      z-index: 2;
     }
     /* Force override any injected scroll locks */
     .antigravity-scroll-lock {

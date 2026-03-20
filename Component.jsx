@@ -15,6 +15,7 @@ import Component_12 from './components/Component_12';
 import Component_13 from './components/Component_13';
 import Component_14 from './components/Component_14';
 import Component_15 from './components/Component_15';
+import Component_5_1 from './components/Component_5_1';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -161,7 +162,10 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] min-h-screen overflow-x-hidden'>
+      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] min-h-screen overflow-x-hidden relative'>
+        <div className="fixed inset-0 z-0 pointer-events-none [backface-visibility:hidden]">
+          <Component_5_1 />
+        </div>
         <div className={`w-full fixed z-[200] [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto transition-all duration-500 ease-in-out ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
           <div className="w-full relative flex items-center [backface-visibility:hidden] select-none px-5 md:px-10">
             <div className="flex-1 flex items-center [backface-visibility:hidden] select-none">
