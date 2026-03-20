@@ -277,7 +277,7 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative [backface-visibility:hidden]"
+          className="w-full max-w-[1920px] mx-auto relative z-[2] [backface-visibility:hidden]"
         >
           <div className="[backface-visibility:hidden]">
             <div className="bg-white w-full h-[963px] fixed z-[10000] overflow-y-scroll invisible [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto">
