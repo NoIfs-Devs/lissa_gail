@@ -17,7 +17,7 @@ function Component_14_8() {
             Design Objects
           </span>
         </div>
-        <div className="bg-white w-[82px] h-[82px] overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
+        <div className="bg-white w-[82px] h-[82px] overflow-x-visible overflow-y-visible [backface-visibility:hidden] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
           <img
             width="1200"
             height="1200"

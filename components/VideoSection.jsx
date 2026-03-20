@@ -71,7 +71,7 @@ export function VideoSection({ desktopVideoUrl, mobileVideoUrl, alt = "Promotion
   };
 
   return (
-    <section className="relative [backface-visibility:hidden] w-full h-screen md:h-auto md:aspect-video overflow-hidden">
+    <section className="relative [backface-visibility:hidden] w-full h-auto md:aspect-video overflow-visible">
       <div className="w-full h-full overflow-hidden [backface-visibility:hidden]">
         <video
           key={activeVideoUrl}

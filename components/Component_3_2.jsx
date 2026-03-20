@@ -16,7 +16,7 @@ function Component_3_2() {
         </span>
         <svg
           viewBox="0 0 4.6 7.7"
-          className="align-middle w-1.5 block overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
+          className="align-middle w-1.5 block overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
           data-svg-size="412"
         >
           <polygon
@@ -35,7 +35,7 @@ function Component_3_2() {
         </span>
         <svg
           viewBox="0 0 4.6 7.7"
-          className="align-middle w-1.5 block overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
+          className="align-middle w-1.5 block overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
           data-svg-size="412"
         >
           <polygon
@@ -54,7 +54,7 @@ function Component_3_2() {
         </span>
         <svg
           viewBox="0 0 4.6 7.7"
-          className="align-middle w-1.5 block overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
+          className="align-middle w-1.5 block overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none select-none group-hover:[transform:translate3d(10px,0px,0px)]"
           data-svg-size="412"
         >
           <polygon

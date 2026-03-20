@@ -51,7 +51,7 @@ function Component_9() {
       >
         <span className="text-center [backface-visibility:hidden]">
           <svg
-            className="h-full [content-visibility:visible] align-middle w-full overflow-x-hidden overflow-y-hidden [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
+            className="h-full [content-visibility:visible] align-middle w-full overflow-x-visible overflow-y-visible [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
             width="51"
             height="52"
             viewBox="0 0 51 52"

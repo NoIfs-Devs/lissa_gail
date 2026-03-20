@@ -16,7 +16,7 @@ function Component_1() {
             Sign out
             <svg
               viewBox="0 0 13.6 7.5"
-              className="align-middle w-3 block overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] caret-[#a2a2a2] select-none ml-3.5"
+              className="align-middle w-3 block overflow-x-visible overflow-y-visible [backface-visibility:hidden] caret-[#a2a2a2] select-none ml-3.5"
               data-svg-size="438"
             >
               <polygon

@@ -8,7 +8,7 @@ function Component_3_1_2() {
         href="#"
         className="flex items-center [backface-visibility:hidden] pointer-events-none select-none group"
       >
-        <div className="bg-white w-20 h-20 relative flex overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none select-none mr-5 p-[13px] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
+        <div className="bg-white w-20 h-20 relative flex overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none select-none mr-5 p-[13px] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
           <img
             width="2600"
             height="2600"

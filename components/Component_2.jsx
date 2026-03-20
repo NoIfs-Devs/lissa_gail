@@ -14,7 +14,7 @@ function Component_2() {
         >
           <svg
             viewBox="0 0 94.169 94.132"
-            className="align-middle w-5 overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none select-none mr-[18px]"
+            className="align-middle w-5 overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none select-none mr-[18px]"
             data-svg-size="616"
           >
             <path

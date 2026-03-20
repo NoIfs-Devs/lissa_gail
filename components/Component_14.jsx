@@ -80,7 +80,7 @@ function Component_14() {
           </span>
           <a
             href="#"
-            className="text-center max-w-[190px] relative block overflow-x-hidden overflow-y-hidden justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] ml-5 mt-auto pt-[19px] pb-5 px-[30px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-[#a7a7a7] border"
+            className="text-center max-w-[190px] relative block overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] ml-5 mt-auto pt-[19px] pb-5 px-[30px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-[#a7a7a7] border"
           >
             <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] uppercase relative z-[1] [backface-visibility:hidden]'>
               An Icon is born

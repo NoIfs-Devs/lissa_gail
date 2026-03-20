@@ -13,7 +13,7 @@ function Component_10() {
           >
             <span className="[backface-visibility:hidden]">
               <svg
-                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-hidden overflow-y-hidden [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
+                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-visible overflow-y-visible [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
@@ -34,7 +34,7 @@ function Component_10() {
           >
             <span className="[backface-visibility:hidden]">
               <svg
-                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-hidden overflow-y-hidden [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
+                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-visible overflow-y-visible [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
@@ -55,7 +55,7 @@ function Component_10() {
           >
             <span className="[backface-visibility:hidden]">
               <svg
-                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-hidden overflow-y-hidden [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
+                className="w-full [content-visibility:visible] align-middle h-[60px] overflow-x-visible overflow-y-visible [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"

@@ -11,7 +11,7 @@ function Component_15_1() {
         viewBox="0 0 61 62"
         width="61"
         height="62"
-        className="h-full [content-visibility:visible] align-middle w-full overflow-x-hidden overflow-y-hidden [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
+        className="h-full [content-visibility:visible] align-middle w-full overflow-x-visible overflow-y-visible [transform:translate3d(0px,0px,0px)] [backface-visibility:hidden]"
         data-svg-size="312"
       >
         <defs className="inline [backface-visibility:hidden]"></defs>

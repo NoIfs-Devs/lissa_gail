@@ -47,7 +47,7 @@ function Component_6_18() {
           </span>
           <a
             href="#"
-            className="text-center md:min-w-[220px] md:max-w-60 w-fit relative hidden md:grid overflow-x-hidden overflow-y-hidden justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] px-[30px] py-[22px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-[#b2b2b2] border"
+            className="text-center md:min-w-[220px] md:max-w-60 w-fit relative hidden md:grid overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] px-[30px] py-[22px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-[#b2b2b2] border"
           >
             <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase relative z-[1] [backface-visibility:hidden]'>
               discover more
@@ -56,7 +56,7 @@ function Component_6_18() {
           </a>
           <a
             href="#"
-            className="text-center w-fit md:hidden relative flex overflow-x-hidden overflow-y-hidden justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] px-1.5 py-0.5 rounded-[2px] border-black border"
+            className="text-center w-fit md:hidden relative flex overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] px-1.5 py-0.5 rounded-[2px] border-black border"
           >
             <span className='text-black leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[7px] tracking-[0.11px] uppercase relative z-[1] block [backface-visibility:hidden] caret-black'>
               discover more

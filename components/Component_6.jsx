@@ -76,7 +76,7 @@ function Component_6() {
           aria-label="The pearl collection"
           className="h-full absolute z-[1] hidden [backface-visibility:hidden] top-0 bottom-auto inset-x-0"
         ></a>
-        <div className="w-full h-full aspect-video overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
+        <div className="w-full h-full aspect-video overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
           <picture>
             <img
               width="4400"
@@ -116,7 +116,7 @@ function Component_6() {
         </div>
       </div>
       <div className="[backface-visibility:hidden] mt-5"></div>
-      <section className="relative h-screen [backface-visibility:hidden]">
+      <section className="relative h-auto [backface-visibility:hidden]">
         <picture className="h-full w-full block">
           <img
             width="1920"
@@ -137,7 +137,7 @@ function Component_6() {
       </ul>
       <div className="[backface-visibility:hidden] mt-5"></div>
       <section className="relative [backface-visibility:hidden] px-5">
-        <div className="w-full h-full aspect-video overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
+        <div className="w-full h-full aspect-video overflow-x-visible overflow-y-visible [backface-visibility:hidden] pointer-events-none rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
           <picture className="h-full w-full block">
             <img
               width="1920"
@@ -182,7 +182,7 @@ function Component_6() {
         </div>
       </section>
       <div className="[backface-visibility:hidden] h-[50px]"></div>
-      <section className="relative grid overflow-x-hidden overflow-y-hidden grid-cols-1 md:grid-cols-[repeat(2,minmax(0px,1fr))] [backface-visibility:hidden] mx-5 rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
+      <section className="relative grid overflow-x-visible overflow-y-visible grid-cols-1 md:grid-cols-[repeat(2,minmax(0px,1fr))] [backface-visibility:hidden] mx-5 rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
         <Component_6_18 />
         <div className="md:h-[850px] relative [backface-visibility:hidden]">
           <div className="w-full h-full [backface-visibility:hidden]">

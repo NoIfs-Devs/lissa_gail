@@ -17,7 +17,7 @@ function Component_14_5() {
             The pearl
           </span>
         </div>
-        <div className="bg-white w-[82px] h-[82px] overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
+        <div className="bg-white w-[82px] h-[82px] overflow-x-visible overflow-y-visible [backface-visibility:hidden] rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
           <img
             width="166"
             height="166"

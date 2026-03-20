@@ -7,13 +7,13 @@ function Component_6_Earring_2() {
       className="[translate:none] [rotate:none] [scale:none] translate-x-0 translate-y-0 opacity-100 [backface-visibility:hidden] list-outside"
       data-component-id="Component_6_Earring_2"
     >
-      <div className="[translate:none] [rotate:none] [scale:none] translate-x-0 translate-y-0 opacity-100 bg-white h-full relative flex overflow-x-hidden overflow-y-hidden flex-col [backface-visibility:hidden] p-[25px] rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
+      <div className="[translate:none] [rotate:none] [scale:none] translate-x-0 translate-y-0 opacity-100 bg-white h-full relative flex overflow-x-visible overflow-y-visible flex-col [backface-visibility:hidden] p-[25px] rounded-br-[10px] rounded-t-[10px] rounded-bl-[10px]">
         <a
           href="#"
           aria-label="2025 Supreme Earrings"
           className="h-full absolute z-[2] block [backface-visibility:hidden] top-0 bottom-auto inset-x-0"
         ></a>
-        <div className="w-fit h-full relative flex overflow-x-hidden overflow-y-hidden flex-col [backface-visibility:hidden] m-auto">
+        <div className="w-fit h-full relative flex overflow-x-visible overflow-y-visible flex-col [backface-visibility:hidden] m-auto">
           <img
             width="2600"
             height="2600"
@@ -36,7 +36,7 @@ function Component_6_Earring_2() {
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-center align-middle w-4 block overflow-x-hidden overflow-y-hidden [backface-visibility:hidden]"
+              className="text-center align-middle w-4 block overflow-x-visible overflow-y-visible [backface-visibility:hidden]"
             >
               <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
             </svg>

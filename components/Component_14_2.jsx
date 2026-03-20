@@ -1,7 +1,7 @@
 function Component_14_2() {
   return (
     <div
-      className="h-0 [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)] overflow-x-hidden overflow-y-hidden [backface-visibility:hidden]"
+      className="h-0 [clip-path:polygon(0%_0%,100%_0%,100%_0%,0%_0%)] overflow-x-visible overflow-y-visible [backface-visibility:hidden]"
       data-component-id="Component_14_2"
     >
       <ul

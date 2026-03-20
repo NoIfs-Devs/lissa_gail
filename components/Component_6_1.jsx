@@ -13,7 +13,7 @@ function Component_6_1() {
         </span>
         <a
           href="#"
-          className="text-center min-w-[220px] relative hidden md:grid overflow-x-hidden overflow-y-hidden justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] mt-4 md:mt-[50px] px-[30px] py-[22px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-black border"
+          className="text-center min-w-[220px] relative hidden md:grid overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] mt-4 md:mt-[50px] px-[30px] py-[22px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-black border"
         >
           <span className='text-black leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase relative z-[1] block [backface-visibility:hidden] caret-black'>
             all Bracelets
@@ -22,7 +22,7 @@ function Component_6_1() {
         </a>
         <a
           href="#"
-          className="text-center w-fit relative flex overflow-x-hidden overflow-y-hidden justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] mt-4 md:mt-0 px-1.5 py-0.5 rounded-[2px] border-black border md:hidden"
+          className="text-center w-fit relative flex overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] mt-4 md:mt-0 px-1.5 py-0.5 rounded-[2px] border-black border md:hidden"
         >
           <span className='text-black leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[7px] tracking-[0.11px] uppercase relative z-[1] block [backface-visibility:hidden] caret-black'>
             explore collection
