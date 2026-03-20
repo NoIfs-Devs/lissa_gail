@@ -135,9 +135,33 @@ function App() {
     );
   }, []);
 
+  // Nuclear fix for persistent scroll locks injected by the environment (e.g. antigravity-scroll-lock)
+  useEffect(() => {
+    const fixScroll = () => {
+      if (document.body.classList.contains('antigravity-scroll-lock')) {
+        document.body.classList.remove('antigravity-scroll-lock');
+      }
+      if (document.body.style.overflow === 'hidden') {
+        document.body.style.overflow = 'auto';
+        document.body.style.height = 'auto';
+      }
+      if (document.documentElement.style.overflow === 'hidden') {
+        document.documentElement.style.overflow = 'auto';
+        document.documentElement.style.height = 'auto';
+      }
+    };
+
+    fixScroll();
+    const observer = new MutationObserver(fixScroll);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class', 'style'] });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] min-h-full overflow-x-hidden [backface-visibility:hidden]'>
+      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] min-h-screen overflow-x-hidden'>
         <div className={`w-full fixed z-[200] [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto transition-all duration-500 ease-in-out ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
           <div className="w-full relative flex items-center [backface-visibility:hidden] select-none px-5 md:px-10">
             <div className="flex-1 flex items-center [backface-visibility:hidden] select-none">
@@ -277,7 +301,7 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative z-[2] [backface-visibility:hidden]"
+          className="w-full max-w-[1920px] mx-auto relative z-[2]"
         >
           <div className="[backface-visibility:hidden]">
             <div className="bg-white w-full h-[963px] fixed z-[10000] overflow-y-scroll invisible [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto">
