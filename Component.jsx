@@ -297,14 +297,16 @@ function App() {
               </div>
             </div>
             <div className="[backface-visibility:hidden] pt-[0.1px]">
-              <div className="relative z-[2] [backface-visibility:hidden]">
+              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
                 <Component_4 />
-                <Component_5 />
+              </div>
+              <Component_5 />
+              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
                 <Component_6 />
               </div>
             </div>
           </div>
-          <div className="bg-black relative z-[2] flex flex-col justify-center items-center [backface-visibility:hidden] min-h-screen">
+          <div className="bg-black sticky bottom-0 z-[10] flex flex-col justify-center items-center [backface-visibility:hidden] min-h-screen">
             <div className="w-full relative z-[1] [backface-visibility:hidden] mx-auto px-5">
               <ul className="bg-white w-full grid grid-cols-1 md:grid-cols-4 items-stretch [backface-visibility:hidden] mt-5 pl-0 py-10 rounded-br-[5px] rounded-t-[5px] rounded-bl-[5px]">
                 <li className="min-h-[135px] relative flex flex-col items-start [backface-visibility:hidden] list-none list-outside px-10">
@@ -651,7 +653,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="[translate:none] [rotate:none] [scale:none] w-full relative z-0 opacity-0 translate-x-[0%] -translate-y-2/4 [backface-visibility:hidden] mx-auto px-5">
+            <div className="w-full relative z-0 [backface-visibility:hidden] mx-auto px-5">
               <div className="grid items-start gap-y-10 md:gap-y-[normal] gap-x-5 grid-cols-1 md:grid-cols-[minmax(0px,1fr)_minmax(0px,1fr)_380px] [backface-visibility:hidden] pt-[90px] pb-[50px] px-5 md:px-[45px]">
                 <Component_7 />
                 <Component_8 />

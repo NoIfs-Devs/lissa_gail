@@ -6,7 +6,7 @@ function Component_5() {
       className="order-none self-auto justify-self-auto row-start-auto col-start-auto row-end-auto col-end-auto z-auto float-none shrink block basis-auto w-full h-screen relative [backface-visibility:hidden] pointer-events-none m-0 p-0 inset-auto"
       data-component-id="Component_5"
     >
-      <section className="[translate:none] [rotate:none] [scale:none] translate-x-0 translate-y-0 w-full h-screen fixed overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none m-0 p-0 left-0 right-auto top-0 bottom-auto">
+      <section className="[translate:none] [rotate:none] [scale:none] translate-x-0 translate-y-0 w-full h-screen fixed overflow-x-hidden overflow-y-hidden [backface-visibility:hidden] pointer-events-none m-0 p-0 left-0 right-auto top-0 bottom-auto z-[1]">
         <Component_5_1 />
         <div className="h-full max-w-[1820px] absolute z-[1] flex flex-col justify-end [backface-visibility:hidden] pointer-events-none pl-[40px] md:pl-[60px] pr-10 pb-[120px] pt-[60px] top-0 bottom-auto inset-x-0">
           <span className='text-white font-medium leading-[1] [font-family:"Montserrat",sans-serif] text-[80px] md:text-[120px] tracking-[4px] uppercase block [backface-visibility:hidden] caret-white pointer-events-none'>
