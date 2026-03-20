@@ -191,9 +191,6 @@ function App() {
   return (
     <>
       <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] relative'>
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <Component_5_1 />
-        </div>
         <div className={`w-full fixed z-[200] [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto transition-all duration-500 ease-in-out ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
           <div className="w-full relative flex items-center [backface-visibility:hidden] select-none px-5 md:px-10">
             <div className="flex-1 flex items-center [backface-visibility:hidden] select-none">
@@ -333,34 +330,34 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative z-[2]"
+          className="w-full max-w-[1920px] mx-auto relative z-[2] bg-transparent"
         >
-          <div className="[backface-visibility:hidden]">
-            <div className="bg-white w-full h-[963px] fixed z-[10000] overflow-y-scroll invisible [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto">
-              <div className="w-full fixed z-[1] flex items-center [backface-visibility:hidden] p-10 left-0 right-auto top-0 bottom-auto">
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden]'>
-                  1
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden] ml-5'>
-                  /
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden] ml-[5px]'>
-                  00
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase block [backface-visibility:hidden] ml-20'>
-                  left hand cuff
-                </span>
-              </div>
-            </div>
-            <div className="[backface-visibility:hidden] pt-[0.1px]">
-              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
-                <Component_4 />
-              </div>
-              <Component_5 />
-              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
-                <Component_6 />
-              </div>
-            </div>
+          {/* Sticky Hero Background */}
+          <div className="sticky top-0 h-screen w-full z-0 overflow-hidden pointer-events-none">
+            <Component_5_1 />
+          </div>
+
+          {/* Touch-Anchor Hero Content */}
+          <div className="relative z-[30] -mt-[100vh]">
+            <Component_5 />
+          </div>
+
+          <div className="z-[30] relative bg-[#efefef]">
+            <Component_4 />
+            <div className="mt-5"></div>
+            <Component_6 />
+            <Component_7 />
+            <Component_8 />
+            <Component_9 />
+            <Component_10 />
+            <Component_11 />
+            <Component_12 />
+            <Component_13 />
+            <Component_14 />
+            <Component_15 />
+            <Component_1 />
+            <Component_2 />
+            <Component_3 />
           </div>
           <div className="bg-black sticky bottom-0 z-[10] flex flex-col justify-center items-center [backface-visibility:hidden] min-h-screen">
             <div className="w-full relative z-[1] [backface-visibility:hidden] mx-auto px-5">
