@@ -136,6 +136,17 @@ function App() {
     );
   }, []);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Nuclear fix for persistent scroll locks injected by the environment (e.g. antigravity-scroll-lock)
   useEffect(() => {
     const fixScroll = () => {
@@ -157,34 +168,8 @@ function App() {
     observer.observe(document.body, { attributes: true, attributeFilter: ['class', 'style'] });
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
 
-    // Aggressive touchstart neutralization for iOS
-    const handleTouch = () => {
-      fixScroll();
-    };
-    window.addEventListener('touchstart', handleTouch, { passive: true });
-    window.addEventListener('touchmove', handleTouch, { passive: true });
-
-    // Inject a global style override at the end of the head
-    const style = document.createElement('style');
-    style.innerHTML = `
-      html, body, #root, #app {
-        overflow-y: auto !important;
-        height: auto !important;
-        min-height: 100% !important;
-        -webkit-overflow-scrolling: touch !important;
-      }
-      .antigravity-scroll-lock {
-        overflow-y: auto !important;
-        height: auto !important;
-      }
-    `;
-    document.head.appendChild(style);
-
     return () => {
       observer.disconnect();
-      window.removeEventListener('touchstart', handleTouch);
-      window.removeEventListener('touchmove', handleTouch);
-      document.head.removeChild(style);
     };
   }, []);
 
@@ -333,34 +318,36 @@ function App() {
         <main
           id="app"
           ref={scrollContainerRef}
-          className="w-full max-w-[1920px] mx-auto relative z-[2]"
+          className="w-full max-w-[1920px] mx-auto relative z-[2] bg-transparent"
         >
-          <div className="[backface-visibility:hidden]">
-            <div className="bg-white w-full h-[963px] fixed z-[10000] overflow-y-scroll invisible [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto">
-              <div className="w-full fixed z-[1] flex items-center [backface-visibility:hidden] p-10 left-0 right-auto top-0 bottom-auto">
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden]'>
-                  1
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden] ml-5'>
-                  /
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] block [backface-visibility:hidden] ml-[5px]'>
-                  00
-                </span>
-                <span className='leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase block [backface-visibility:hidden] ml-20'>
-                  left hand cuff
-                </span>
-              </div>
+          {/* Sticky Hero Background (Desktop Only) */}
+          {!isMobile && (
+            <div className="sticky top-0 h-screen w-full z-[15] overflow-hidden pointer-events-none">
+              <Component_5_1 />
             </div>
-            <div className="[backface-visibility:hidden] pt-[0.1px]">
-              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
-                <Component_4 />
-              </div>
-              <Component_5 />
-              <div className="relative z-[30] bg-[#efefef] [backface-visibility:hidden]">
-                <Component_6 />
-              </div>
-            </div>
+          )}
+
+          {/* Hero Content Area */}
+          <div className={`relative z-[30] ${!isMobile ? '-mt-[100vh]' : ''}`}>
+            <Component_5 isMobile={isMobile} />
+          </div>
+
+          <div className="z-[30] relative bg-[#efefef]">
+            <Component_4 />
+            <div className="mt-5"></div>
+            <Component_6 />
+            <Component_7 />
+            <Component_8 />
+            <Component_9 />
+            <Component_10 />
+            <Component_11 />
+            <Component_12 />
+            <Component_13 />
+            <Component_14 />
+            <Component_15 />
+            <Component_1 />
+            <Component_2 />
+            <Component_3 />
           </div>
           <div className="bg-black sticky bottom-0 z-[10] flex flex-col justify-center items-center [backface-visibility:hidden] min-h-screen">
             <div className="w-full relative z-[1] [backface-visibility:hidden] mx-auto px-5">
