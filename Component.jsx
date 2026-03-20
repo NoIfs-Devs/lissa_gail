@@ -157,13 +157,41 @@ function App() {
     observer.observe(document.body, { attributes: true, attributeFilter: ['class', 'style'] });
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
 
-    return () => observer.disconnect();
+    // Aggressive touchstart neutralization for iOS
+    const handleTouch = () => {
+      fixScroll();
+    };
+    window.addEventListener('touchstart', handleTouch, { passive: true });
+    window.addEventListener('touchmove', handleTouch, { passive: true });
+
+    // Inject a global style override at the end of the head
+    const style = document.createElement('style');
+    style.innerHTML = `
+      html, body, #root, #app {
+        overflow-y: auto !important;
+        height: auto !important;
+        min-height: 100% !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+      .antigravity-scroll-lock {
+        overflow-y: auto !important;
+        height: auto !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('touchstart', handleTouch);
+      window.removeEventListener('touchmove', handleTouch);
+      document.head.removeChild(style);
+    };
   }, []);
 
   return (
     <>
-      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] min-h-screen overflow-x-hidden relative'>
-        <div className="fixed inset-0 z-0 pointer-events-none [backface-visibility:hidden]">
+      <div className='bg-[#efefef] [font-family:"Aeonik_Pro",arial,system-ui,sans-serif] relative'>
+        <div className="fixed inset-0 z-0 pointer-events-none">
           <Component_5_1 />
         </div>
         <div className={`w-full fixed z-[200] [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto transition-all duration-500 ease-in-out ${scrolled ? 'bg-black shadow-lg' : 'bg-transparent'}`}>
