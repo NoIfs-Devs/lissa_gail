@@ -6,7 +6,7 @@ function Component_6_18() {
     >
       <a
         href="#"
-        className='text-black leading-[30px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[24.9984px] uppercase text-center block [backface-visibility:hidden]'
+        className='text-black leading-[30px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[24.9984px] uppercase text-center block [backface-visibility:hidden] mb-10 md:mb-0'
       >
         collaborations
       </a>
@@ -27,7 +27,7 @@ function Component_6_18() {
         <div className="[backface-visibility:hidden]">
           <a
             href="#"
-            className='text-black leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase relative z-[4] inline-block [backface-visibility:hidden] hover:text-black hover:scale-100'
+            className='text-black leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase relative z-[4] inline-block [backface-visibility:hidden] hover:text-black hover:scale-100 hidden md:inline-block'
           >
             collaborations
           </a>
@@ -35,7 +35,7 @@ function Component_6_18() {
         <div className="[backface-visibility:hidden]">
           <a
             href="#"
-            className='text-black leading-[23px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[18px] uppercase relative inline-block [background-position-x:100%] [background-position-y:100%] bg-no-repeat bg-[0px_1px] [backface-visibility:hidden] mt-2.5'
+            className='text-black leading-[23px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[18px] uppercase relative inline-block [background-position-x:100%] [background-position-y:100%] bg-no-repeat bg-[0px_1px] [backface-visibility:hidden] mt-12 md:mt-2.5'
             data-style-id="style-10-1773778729183"
           >
             Lissa Gail Galleries

@@ -4,16 +4,16 @@ function Component_6_19_1() {
       className="flex justify-between items-end [backface-visibility:hidden]"
       data-component-id="Component_6_19_1"
     >
-      <span className='text-white leading-[60px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] font-thin text-[60px] tracking-[1.8px] uppercase block [backface-visibility:hidden] caret-white mt-[15px]'>
+      <span className='text-white leading-[28px] md:leading-[60px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] font-thin text-[24px] md:text-[60px] tracking-[1.8px] uppercase block [backface-visibility:hidden] caret-white mt-2 md:mt-[15px]'>
         CRAFTED FOR
         <br />
         CHARACTER
       </span>
       <a
         href="#"
-        className="text-center min-w-[220px] relative grid overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] px-[30px] py-[22px] rounded-br-[3px] rounded-t-[3px] rounded-bl-[3px] border-[rgba(255,255,255,0.4)] border"
+        className="text-center md:min-w-[220px] relative flex md:grid overflow-x-visible overflow-y-visible justify-center content-center [backface-visibility:hidden] [mask-image:linear-gradient(rgb(0,0,0)_0px,rgb(0,0,0)_0px)] pt-[1.5px] pb-1 px-1.5 md:px-[30px] md:py-[22px] rounded-[2px] md:rounded-br-[3px] md:rounded-t-[3px] md:rounded-bl-[3px] border-[rgba(255,255,255,0.4)] border"
       >
-        <span className='text-[#f6f6f6] leading-[15px] [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[11px] tracking-[0.11px] uppercase relative z-[1] block [backface-visibility:hidden] caret-[#f6f6f6]'>
+        <span className='text-[#f6f6f6] leading-none [font-family:"GT_America_LG_Extended",arial,system-ui,sans-serif] text-[7px] md:text-[11px] tracking-[0.11px] uppercase relative z-[1] [backface-visibility:hidden] caret-[#f6f6f6]'>
           EXPLORE THE STUDIO
         </span>
         <div className="w-[202%] h-full absolute z-0 [backface-visibility:hidden] left-0 right-auto top-0 bottom-auto"></div>

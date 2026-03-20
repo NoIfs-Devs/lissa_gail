@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const container = scrollContainerRef.current;
-      const scrollTop = container ? container.scrollTop : (window.pageYOffset || document.documentElement.scrollTop);
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || (container ? container.scrollTop : 0);
       // Trigger when most of the hero is scrolled (e.g. 80% of window height)
       setScrolled(scrollTop > (window.innerHeight * 0.8));
     };
